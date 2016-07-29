@@ -1,16 +1,150 @@
+# Parameters
+# ------------------------------------------------
 /app/config/parameters.yml
-/build/
-/phpunit.xml
+/app/config/parameters.ini
+
+
+# Directory with cache, logs, sessions etc.
+# ------------------------------------------------
 /var/*
+!var/SymfonyRequirements.php
+
+
+# Cache
+# ------------------------------------------------
+# - Symfony2
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+
+# - Symfony3
+/var/bootstrap.php.cache
 !/var/cache
 /var/cache/*
 !var/cache/.gitkeep
-!/var/logs
-/var/logs/*
-!var/logs/.gitkeep
+
+
+# Sessions
+# ------------------------------------------------
+# - Symfony3
 !/var/sessions
 /var/sessions/*
 !var/sessions/.gitkeep
-!var/SymfonyRequirements.php
+
+
+# Logs
+# ------------------------------------------------
+# - Symfony2
+/app/logs/*
+!app/logs/.gitkeep
+
+# - Symfony3
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+
+
+# Managed by Composer
+# ------------------------------------------------
+# - Bin
+/bin/*
+!bin/console
+!bin/symfony_requirements
+
+# - Vendors
 /vendor/
+
+
+# Resources (generated, user's content etc.)
+# ------------------------------------------------
+# - Assets (automatically generated)
 /web/bundles/
+/web/css/
+/web/js/
+/web/fonts/
+/web/images/
+/web/videos/
+
+# - Uploaded content (user's content)
+/web/upload/
+/web/order_images_copies/
+/warehouse/uploaded/
+
+# - Deleted content (user's content)
+/warehouse/deleted
+
+
+# Build files
+# ------------------------------------------------
+/build/
+
+
+# Phing
+# ------------------------------------------------
+/phing/properties
+
+
+# PHPUnit
+# ------------------------------------------------
+/app/phpunit.xml
+/phpunit.xml
+
+
+# Generated databases
+# ------------------------------------------------
+/data/
+*.sql
+*.sqlite
+
+
+# Composer
+# ------------------------------------------------
+/composer.phar
+
+
+# Meritoo
+# ------------------------------------------------
+!bin/meritoo
+
+
+# Shell scripts
+# ------------------------------------------------
+/*.sh
+
+
+# Compiled source
+# ------------------------------------------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+
+# OS generated files
+# ------------------------------------------------
+*~
+.DS_Store
+.DS_Store?
+*.swp
+._*
+*.out
+*.idea
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+/nbproject/
+/.settings
+/.buildpath
+/.project
+.~lock.*
+~$*
+
+
+# Node.js, Bower
+# ------------------------------------------------
+/node_modules
+/bower_components
