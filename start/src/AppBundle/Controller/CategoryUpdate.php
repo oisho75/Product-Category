@@ -49,7 +49,7 @@ public function numberAction(Request $request)
             $form->get('categories')->getData()->setName($form->get('updateName')->getData());
             $form->get('categories')->getData()->setDescription($form->get('updateDescription')->getData());
             $em->flush();
-            $nextAction2='home'; 
+            $nextAction2='Home'; 
             return $this->redirectToRoute($nextAction2);
             }
             

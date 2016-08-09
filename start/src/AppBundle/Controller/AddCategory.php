@@ -43,7 +43,7 @@ public function numberAction(Request $request)
            
             $nextAction2;
             if($form->get('save')->isClicked()){
-            $nextAction2='home'; 
+            $nextAction2='Home'; 
             $em->persist($category);
             $em->flush();
             return $this->redirectToRoute($nextAction2);

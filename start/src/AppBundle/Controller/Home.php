@@ -20,7 +20,7 @@ class Home extends Controller
 
     /**
 
-     * @Route("/home", name="Home")
+     * @Route("/", name="Home")
 
      */
     

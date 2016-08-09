@@ -1,0 +1,29 @@
+{# src/AppBundle/Resources/views/default/table.html.twig #}
+
+
+{% for c in categories %}
+ <table>
+   
+        <tr>
+          
+            <h2>{{ c.name }}</h2>
+            
+            {% for p in c.products %}
+            <table>
+   
+                   <tr>
+                       <td>{{ p.id }}</td>
+                       <td>{{ p.name }}</td>
+                       <td>{{ p.description }}</td>
+                       <td>{{ p.price }}</td>
+                   </tr>
+    
+            </table>
+
+            {% endfor %}
+        </tr>
+    
+    </table>
+
+{% endfor %}
+

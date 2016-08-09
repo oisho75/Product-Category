@@ -49,7 +49,7 @@ public function numberAction(Request $request)
             $em->remove($form->get('products')->getData());
             
             $em->flush();
-            $nextAction2='home'; 
+            $nextAction2='Home'; 
             return $this->redirectToRoute($nextAction2);
             }
             

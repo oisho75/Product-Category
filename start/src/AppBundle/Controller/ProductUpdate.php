@@ -50,7 +50,7 @@ public function numberAction(Request $request)
             $form->get('products')->getData()->setDescription($form->get('updateDescription')->getData());
             $form->get('products')->getData()->setPrice($form->get('updatePrice')->getData());
             $em->flush();
-            $nextAction2='home'; 
+            $nextAction2='Home'; 
             return $this->redirectToRoute($nextAction2);
             }
             
