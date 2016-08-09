@@ -50,7 +50,7 @@ public function numberAction(Request $request)
            
         }
 
-        return $this->render('default/newPR.html.twig', array(
+        return $this->render('default/addProd.html.twig', array(
             'form' => $form->createView(),
         ));
 

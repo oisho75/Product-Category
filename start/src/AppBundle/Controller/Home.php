@@ -44,7 +44,7 @@ public function numberAction(Request $request)
                $nextAction = 'Category Update';}
 
             if( $form->get('updateP')->isClicked()){
-               $nextAction = 'Update Product';}
+               $nextAction = 'Product Update';}
             if( $form->get('addC')->isClicked()){
                $nextAction = 'Add Category';
                }
@@ -62,9 +62,9 @@ public function numberAction(Request $request)
         
 
          }
-     echo ($this->renderView('default/new2.html.twig', array(
+     echo ($this->renderView('default/table.html.twig', array(
             'categories' => $categories)));
-      return $this->render('default/new3.html.twig', array(
+      return $this->render('default/home.html.twig', array(
             'form' => $form->createView(),
         ));
      

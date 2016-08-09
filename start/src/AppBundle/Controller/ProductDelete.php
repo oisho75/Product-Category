@@ -58,7 +58,7 @@ public function numberAction(Request $request)
            
         }
 
-        return $this->render('default/npu.html.twig', array(
+        return $this->render('default/delProd.html.twig', array(
             'form' => $form->createView(),
         ));
 
