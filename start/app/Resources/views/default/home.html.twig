@@ -1,16 +1,7 @@
-{# src/AppBundle/Resources/views/default/home.html.twig #}
+{% extends 'base.html.twig' %}
 
-
-   
-
-
-{{ form_start(form) }}
-    
-    
-
-    <h3>What Would You Like To Do?</h3>
-    
-{{ form_end(form) }}
-
-
-
+{% block body %}
+    {{ form_start(form) }}
+        <h3>What Would You Like To Do?</h3>
+    {{ form_end(form) }}
+{% endblock %}
