@@ -1,0 +1,20 @@
+{
+  "name": "langston-payne-product-category",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Langston Payne <langstonp57@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/oisho75/Product-Category",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
