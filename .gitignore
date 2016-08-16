@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template
+
+# IntelliJ project files
+.idea
+out
+gen
+
+*~
+.DS_Store
+nbproject
+.buildpath
+.project
+.settings
+
+# Node.js, Bower
+# ------------------------------------------------
+/node_modules
+/bower_components
